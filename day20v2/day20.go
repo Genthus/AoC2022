@@ -143,7 +143,7 @@ func printCircle(zeroVal *node) {
 	}
 }
 
-func Day22(input []int) (int, int, int) {
+func Day20(input []int) (int, int, int) {
 	nodeMap, p := mix(input)
 	a := findValAfter(p, 1000, len(nodeMap))
 	b := findValAfter(p, 2000, len(nodeMap))
@@ -151,7 +151,7 @@ func Day22(input []int) (int, int, int) {
 	return a, b, c
 }
 
-func Day22Part2(input []int, mixTimes int, key int) (int, int, int, *node) {
+func Day20Part2(input []int, mixTimes int, key int) (int, int, int, *node) {
 	nodeMap := createNodeCircleWithKey(input, key)
 	var zeroVal *node
 	for i := 0; i < mixTimes; i++ {

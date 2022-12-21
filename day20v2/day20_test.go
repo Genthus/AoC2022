@@ -61,7 +61,7 @@ func TestExample(t *testing.T) {
 	}
 	//_, p := mix(intInput)
 	//printCircle(p)
-	a, b, c := Day22(intInput)
+	a, b, c := Day20(intInput)
 	if a != 4 || b != -3 || c != 2 {
 		t.Error("Expected 4,3,2 got", a, b, c)
 	}
@@ -80,7 +80,7 @@ func TestInput(t *testing.T) {
 			intInput = append(intInput, temp)
 		}
 	}
-	a, b, c := Day22(intInput)
+	a, b, c := Day20(intInput)
 	fmt.Println("Part 1")
 	fmt.Println(a, b, c)
 	fmt.Println("Sum:", a+b+c)
@@ -106,7 +106,7 @@ func TestExample2(t *testing.T) {
 			intInput = append(intInput, temp)
 		}
 	}
-	a, b, c, _ := Day22Part2(intInput, 10, 811589153)
+	a, b, c, _ := Day20Part2(intInput, 10, 811589153)
 	//printCircle(p)
 	if a != 811589153 || b != 2434767459 || c != -1623178306 {
 		t.Error("Expected something else, got", a, b, c)
@@ -127,7 +127,7 @@ func TestInputPart2(t *testing.T) {
 		}
 	}
 	fmt.Println("Part 2")
-	a, b, c, _ := Day22Part2(intInput, 10, 811589153)
+	a, b, c, _ := Day20Part2(intInput, 10, 811589153)
 	fmt.Println(a, b, c)
 	fmt.Println("Sum:", a+b+c)
 
